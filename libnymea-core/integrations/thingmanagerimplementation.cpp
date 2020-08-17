@@ -405,9 +405,6 @@ ThingSetupInfo *ThingManagerImplementation::reconfigureThingInternal(Thing *thin
         return info;
     }
 
-    // first remove the thing in the plugin
-    plugin->thingRemoved(thing);
-
     // mark setup as incomplete
     thing->setSetupStatus(Thing::ThingSetupStatusInProgress, Thing::ThingErrorNoError);
 
