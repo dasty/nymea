@@ -1,7 +1,27 @@
-nymea (0.23.0) UNRELEASED; urgency=medium
+nymea (0.23.0) xenial; urgency=medium
 
+  [ Michael Zanetti ]
+  * Retry setup if it fails at startup (e.g. network isn't up yet)
+  * Loggingcategories
+  * Don't call thingRemoved() on the plugin in case of reconfiguring
+  * Fix conversion of values
+  * Use bindValue for composing query strings for the log DB
+  * 0.23
 
- -- Michael Zanetti <michael.zanetti@nymea.io>  Thu, 23 Jul 2020 17:30:38 +0200
+  [ Simon Stürz ]
+  * Fix missing name method override for json handlers
+
+  [ Michael Zanetti ]
+  * Rework garage door interfaces
+  * Make it build with Qt 5.14 and -Wno-deprecated
+
+  [ Simon Stürz ]
+  * Fix update busy flag in GetUpdateStatus API call
+
+  [ Michael Zanetti ]
+  * Fix cleaning up tags that are not needed any more
+
+ -- Jenkins <jenkins@nymea.io>  Mon, 17 Aug 2020 13:29:06 +0200
 
 nymea (0.22.0) xenial; urgency=medium
 
